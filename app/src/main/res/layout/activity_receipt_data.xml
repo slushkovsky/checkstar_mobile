@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<TableLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <TableRow>
+        <TextView android:text="Store:"/>
+        <EditText android:id="@+id/store"/>
+    </TableRow>
+
+    <TableRow>
+        <TextView android:text="Date:" />
+        <EditText android:id="@+id/date"/>
+        <TextView android:text="Time:" />
+        <TextClock android:id="@+id/time"/>
+    </TableRow>
+
+    <TableRow>
+        <TextView android:text="Category:"/>
+        <Spinner android:id="@+id/category"></Spinner>
+    </TableRow>
+
+    <TableRow>
+        <TextView android:text="Currency:"/>
+        <EditText android:id="@+id/currency"/>
+    </TableRow>
+
+    <TableLayout android:id="@+id/goods">
+        <TableRow>
+            <TextView android:text="Name"/>
+            <TextView android:text="Count"/>
+            <TextView android:text="Unit"/>
+            <TextView android:text="Price"/>
+        </TableRow>
+    </TableLayout>
+
+    <TableRow>
+        <Button android:id="@+id/btn_cancel" android:text="Cancel" />
+        <Button android:id="@+id/btn_save" android:text="Save" />
+    </TableRow>
+</TableLayout>
