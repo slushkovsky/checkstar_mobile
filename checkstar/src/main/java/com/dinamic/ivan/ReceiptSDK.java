@@ -28,23 +28,21 @@ import java.util.List;
 
 public class ReceiptSDK {
     private static class Options {
-        boolean useSmsHistory     = false;
-        boolean useSmsIncomming   = false;
-        boolean useGmailHistory   = false;
-        boolean useGmailIncomming = false;
-        boolean useNotifications  = false;
-        boolean useLocation       = false;
+        boolean useSmsHistory     = true;
+        boolean useSmsIncomming   = true;
+        boolean useGmailHistory   = true;
+        boolean useGmailIncomming = true;
+        boolean useNotifications  = true;
+        boolean useLocation       = true;
 
-        boolean backupReceipts = false;
-        boolean backupExpenses = false;
-        boolean backupSales    = false;
+        boolean backupReceipts = true;
+        boolean backupExpenses = true;
+        boolean backupSales    = true;
 
         String userId = null;
 
-        FutureCallback<List<Expense>> onExpensesHistory;
-        FutureCallback<List<Expense>> onExpensesNew;
-        FutureCallback<List<Sale>>    onSalesHistory;
-        FutureCallback<List<Sale>>    onSalesNew;
+        FutureCallback<List<Expense>> onExpenses;
+        FutureCallback<List<Sale>>    onSales;
     }
 
     public static class Builder {
@@ -63,10 +61,8 @@ public class ReceiptSDK {
 
         public Builder setUserId(String userId) { opts.userId = userId; return this; }
 
-        public Builder onExpensesHistory(FutureCallback<List<Expense>> callback) { opts.onExpensesHistory = callback; return this; }
-        public Builder onExpensesNew    (FutureCallback<List<Expense>> callback) { opts.onExpensesNew     = callback; return this; }
-        public Builder onSalesHistory   (FutureCallback<List<Sale>>    callback) { opts.onSalesHistory    = callback; return this; }
-        public Builder onSalesNew       (FutureCallback<List<Sale>>    callback) { opts.onSalesNew        = callback; return this; }
+        public Builder onExpenses(FutureCallback<List<Expense>> callback) { opts.onExpenses = callback; return this; }
+        public Builder onSales   (FutureCallback<List<Sale>>    callback) { opts.onSales    = callback; return this; }
 
         public ReceiptSDK build(Context context) {
             SharedPreferences prefs = PreferenceManager.getDefaultSharedPreferences(context);
@@ -102,7 +98,7 @@ public class ReceiptSDK {
     private StorageApi storageApi = null;
 
     private ReceiptAnalyser     receiptsAnalyser    = null;
-    private SMSParser smsAnalyser         = null;
+    private SMSParser           smsAnalyser         = null;
     private GmailAnalyser       gmailAnalyser       = null;
     private NotificationAnayser notificationAnayser = null;
     private LocationAnalyser    locationAnalyser    = null;
@@ -117,14 +113,13 @@ public class ReceiptSDK {
         this.receiptsAnalyser = new ReceiptAnalyser(context);
 
         this.smsAnalyser = new SMSParser.Builder()
-            .useHistory          (opts.useSmsHistory)
-            .useIncomming        (opts.useSmsIncomming)
-            .onExpensesHistorical(opts.onExpensesHistory)
-            .onExpensesNew       (opts.onExpensesNew)
-            .onSalesHistorical   (opts.onSalesHistory)
-            .onSalesNew          (opts.onSalesNew)
+            .useHistory  (opts.useSmsHistory)
+            .useIncomming(opts.useSmsIncomming)
+            .onExpenses  (opts.onExpenses)
+            .onSales     (opts.onSales)
             .build(context);
 
+        /*
         this.gmailAnalyser = new GmailAnalyser.Builder()
             .useHistory          (opts.useGmailHistory)
             .useIncomming        (opts.useGmailIncomming)
@@ -133,6 +128,7 @@ public class ReceiptSDK {
             .onSalesHistorical   (opts.onSalesHistory)
             .onSalesNew          (opts.onSalesNew)
             .build(context);
+           */
 
         if (opts.useNotifications)
             this.notificationAnayser = new NotificationAnayser();

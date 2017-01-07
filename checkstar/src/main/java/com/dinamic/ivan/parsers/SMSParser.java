@@ -19,29 +19,21 @@ import java.util.List;
 
 public class SMSParser extends BaseParser {
     private static class Options {
-        BaseAnalyser analyser = null;
-
-        boolean useHistory = true;
+        boolean useHistory   = true;
         boolean useIncomming = true;
 
-        FutureCallback<List<Expense>> onExpensesHistorical;
-        FutureCallback<List<Expense>> onExpensesNew;
-        FutureCallback<List<Sale>>    onSalesHistorical;
-        FutureCallback<List<Sale>>    onSalesNew;
+        FutureCallback<List<Expense>> onExpenses;
+        FutureCallback<List<Sale>>    onSales;
     }
 
     public static class Builder {
         private Options opts = new Options();
 
-//        public Builder setAna
-
         public Builder useHistory  (Boolean use) { opts.useHistory   = (use == null ? opts.useHistory   : use); return this; }
         public Builder useIncomming(Boolean use) { opts.useIncomming = (use == null ? opts.useIncomming : use); return this; }
 
-        public Builder onExpensesHistorical(FutureCallback<List<Expense>> callback) { opts.onExpensesHistorical = callback; return this; }
-        public Builder onExpensesNew       (FutureCallback<List<Expense>> callback) { opts.onExpensesNew        = callback; return this; }
-        public Builder onSalesHistorical   (FutureCallback<List<Sale>>    callback) { opts.onSalesHistorical    = callback; return this; }
-        public Builder onSalesNew          (FutureCallback<List<Sale>>    callback) { opts.onSalesNew           = callback; return this; }
+        public Builder onExpenses(FutureCallback<List<Expense>> callback) { opts.onExpenses = callback; return this; }
+        public Builder onSales   (FutureCallback<List<Sale>>    callback) { opts.onSales    = callback; return this; }
 
         public SMSParser build(Context context) {
             return new SMSParser(context, opts);
@@ -54,6 +46,14 @@ public class SMSParser extends BaseParser {
         super(context);
 
         this.opts = (opts == null ? this.opts : opts);
+
+        if (opts.useHistory) {
+            analyseHistory();
+        }
+
+        if (opts.useIncomming) {
+            // TODO
+        }
     }
 
     public List<Expense> analyseNewIncommming() {
@@ -64,8 +64,8 @@ public class SMSParser extends BaseParser {
         final List<Expense> expenses = new ArrayList<Expense>();
         List<SMS> smsHistory = this.getHistory();
 
-//        for (SMS sms: smsHistory)
-//            analyser.recognizeSMS(sms, onExpensesHistoricalDetected, onExpensesLiveDetected, onSalesDetected);
+        for (SMS sms: smsHistory)
+            analyser.recognizeSMS(sms, opts.onExpenses, opts.onSales);
 
         return expenses;
     }

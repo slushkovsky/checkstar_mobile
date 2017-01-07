@@ -4,38 +4,35 @@ import com.google.gson.JsonObject;
 
 
 public class Expense {
-    public double price;
-    public String currency;
+    public Payment payment;
     public ExpenseCategory category;
     public String name;
-    public ExpenseDetector detectedBy;
+    public DetectedIn detectedIn;
 
-    public Expense(double price, String currency, ExpenseCategory category, String name, ExpenseDetector detectedBy) {
-        this.price = price;
-        this.currency = currency;
+    public Expense(Payment payment, ExpenseCategory category, String name, DetectedIn detectedIn) {
+        this.payment = payment;
         this.category = category;
         this.name = (name == null ? "unknown": name);
-        this.detectedBy = detectedBy;
+        this.detectedIn = detectedIn;
     }
 
     public static Expense fromJsonObject(JsonObject json) {
-        double price      = json.get("price")      .getAsDouble();
-        String currency   = json.get("currency")   .getAsString();
-        String category   = json.get("category")   .getAsString();
-        String name       = json.get("name")       .getAsString();
-        String detectedBy = json.get("detected_by").getAsString();
+        Payment payment = Payment.fromJsonObject(json.get("payment").getAsJsonObject());
 
-        return new Expense(price, currency, ExpenseCategory.valueOf(category), name, ExpenseDetector.valueOf(detectedBy));
+        String category   = json.get("category").getAsString();
+        String name       = json.get("name")    .getAsString();
+
+        return new Expense(payment, ExpenseCategory.valueOf(category.toUpperCase()), name, null);
     }
 
     public JsonObject toJsonObject() {
         JsonObject obj = new JsonObject();
 
-        obj.addProperty("price",       this.price);
-        obj.addProperty("currency",    this.currency);
+        obj.add("payment", this.payment.toJsonObject());
+
         obj.addProperty("category",    this.category.toString());
         obj.addProperty("name",        this.name);
-        obj.addProperty("detected_by", this.detectedBy.toString());
+        obj.addProperty("detected_by", this.detectedIn.toString());
 
         return obj;
     }

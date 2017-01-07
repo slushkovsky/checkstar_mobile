@@ -37,7 +37,7 @@ public class Receipt implements Serializable {
     }
 
     public Expense getExpense() {
-        return new Expense(this.sumPrice, this.currency, this.category, this.store.getName(), ExpenseDetector.RECEIPT);
+        return new Expense(new Payment(this.sumPrice, this.currency, PaymentMethod.UNKNOWN), this.category, this.store.getName(), DetectedIn.RECEIPT);
     }
 
     public static Receipt fromJsonObject(JsonObject json) {

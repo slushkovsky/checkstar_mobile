@@ -17,8 +17,12 @@ public class Store {
     }
 
     public static Store fromJsonObject(JsonObject json) {
-        String name    = json.get("name")   .getAsString();
-        String address = json.get("address").getAsString();
+        String name = json.get("name")   .getAsString();
+
+        String address = null;
+
+        if (!json.get("address").isJsonNull())
+            address = json.get("address").getAsString();
 
         return new Store(name, address);
     }
