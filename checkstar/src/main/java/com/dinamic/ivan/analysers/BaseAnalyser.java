@@ -12,8 +12,8 @@ import com.koushikdutta.async.future.FutureCallback;
 import java.util.List;
 
 public abstract class BaseAnalyser {
-    abstract void recognizeSMS(SMS sms, final FutureCallback<List<Expense>> onResponse);
-    abstract void recognizeReceipt(String photoPath, final FutureCallback<Receipt> onResponse);
-    abstract void getSalesNearLocation(Location location, final FutureCallback<List<Sale>> onResponse);
-    abstract void analyseGmail(GoogleSignInAccount account);
+    abstract public void recognizeSMS(SMS sms, final FutureCallback<List<Expense>> onResponse);
+    abstract public void recognizeReceipt(String photoPath, final FutureCallback<Receipt> onResponse);
+    abstract public void getSalesNearLocation(Location location, String placesKeywords, final FutureCallback<List<Sale>> onResponse);
+    abstract public void analyseGmail(GoogleSignInAccount account);
 }

@@ -13,7 +13,6 @@ import com.dinamic.ivan.parsers.LocationAnalyser;
 import com.dinamic.ivan.parsers.NotificationAnayser;
 import com.dinamic.ivan.entities.Receipt;
 import com.dinamic.ivan.parsers.ReceiptAnalyser;
-import com.dinamic.ivan.receiptsdk.BuildConfig;
 import com.dinamic.ivan.server.StorageApi;
 import com.dinamic.ivan.parsers.SMSParser;
 import com.koushikdutta.async.future.FutureCallback;
@@ -138,8 +137,8 @@ public class ReceiptSDK {
         if (opts.useNotifications)
             this.notificationAnayser = new NotificationAnayser();
 
-        if (opts.useLocation)
-            this.locationAnalyser = new LocationAnalyser(); // TODO: Sales shops
+//        if (opts.useLocation)
+//            this.locationAnalyser = new LocationAnalyser(); // TODO: Sales shops
     }
 
     public void onActivityResuilt(int requestCode, int resultCode, final Intent intent) {

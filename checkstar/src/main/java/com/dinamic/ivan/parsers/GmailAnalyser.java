@@ -8,9 +8,9 @@ import android.util.Log;
 
 import com.dinamic.ivan.exc.GoogleAuthError;
 import com.dinamic.ivan.exc.NotImplementedError;
-import com.dinamic.ivan.receiptsdk.BuildConfig;
+import com.dinamic.ivan.BuildConfig;
 import com.dinamic.ivan.entities.Expense;
-import com.dinamic.ivan.receiptsdk.R;
+import com.dinamic.ivan.R;
 import com.dinamic.ivan.entities.Sale;
 import com.google.android.gms.auth.api.Auth;
 import com.google.android.gms.auth.api.signin.GoogleSignInAccount;

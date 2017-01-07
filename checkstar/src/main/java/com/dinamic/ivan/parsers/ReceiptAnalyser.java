@@ -5,6 +5,7 @@ import android.content.Context;
 
 import com.dinamic.ivan.entities.Expense;
 
+import java.util.ArrayList;
 import java.util.List;
 
 public class ReceiptAnalyser {
@@ -16,5 +17,7 @@ public class ReceiptAnalyser {
 
     public List<Expense> analyse(String photoFilePath) {
 //            LogicApi.recognizeReceipt(photoFilePath);
+
+        return new ArrayList<Expense>(); // NOTE: Hotfix for fast build.
     }
 }

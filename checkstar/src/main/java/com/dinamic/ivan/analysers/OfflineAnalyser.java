@@ -133,5 +133,7 @@ public class OfflineAnalyser extends BaseAnalyser {
             else
                 throw new OnlineAnalyserRespFromatError();
         }
+
+        return true;
     }
 }

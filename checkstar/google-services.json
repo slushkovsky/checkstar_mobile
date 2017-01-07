@@ -1,0 +1,48 @@
+{
+  "project_info": {
+    "project_number": "550216963766",
+    "project_id": "checkstar-152822"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:550216963766:android:99267753fed22ab7",
+        "android_client_info": {
+          "package_name": "com.dinamic.ivan"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "550216963766-u4ifte16ubgttplktbeqjkj52etbtjuu.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.dinamic.ivan",
+            "certificate_hash": "04789E0C6FDE32C0CFC4338986106D617D5E9EB5"
+          }
+        },
+        {
+          "client_id": "550216963766-nvjh57nntogpencmnuoe34144d0odroj.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCpMZ8E7GnfrUbCevbctuTWBiJ9ed-1B30"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 1,
+          "other_platform_oauth_client": []
+        },
+        "ads_service": {
+          "status": 1
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

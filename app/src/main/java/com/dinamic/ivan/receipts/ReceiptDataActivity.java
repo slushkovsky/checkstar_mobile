@@ -15,6 +15,7 @@ import com.dinamic.ivan.entities.ExpenseCategory;
 import com.dinamic.ivan.entities.GoodUnit;
 import com.dinamic.ivan.entities.Receipt;
 import com.dinamic.ivan.entities.ReceiptGood;
+import com.dinamic.ivan.entities.Store;
 
 import java.util.ArrayList;
 import java.util.Arrays;
@@ -58,7 +59,7 @@ public class ReceiptDataActivity extends AppCompatActivity {
     }
 
     private void setReceipInView(Receipt receipt) {
-        ((EditText)  findViewById(R.id.store   )).setText(receipt.storeName);
+//        ((EditText)  findViewById(R.id.store   )).setText(receipt.storeName);
         ((EditText)  findViewById(R.id.date    )).setText(VIEW_DATE_FORMATTER.print(receipt.datetime));
         ((TextClock) findViewById(R.id.time    )).setText(VIEW_TIME_FORMATTER.print(receipt.datetime));
         ((Spinner)   findViewById(R.id.category)).setSelection((new ArrayList<ExpenseCategory>(Arrays.asList(ExpenseCategory.values()))).indexOf(receipt.category));
@@ -95,11 +96,11 @@ public class ReceiptDataActivity extends AppCompatActivity {
     }
 
     private Receipt viewToReceipt() {
-        String store    = ((EditText)  findViewById(R.id.store   )).getText().toString();
-        String dateStr  = ((EditText)  findViewById(R.id.date    )).getText().toString();
-        String timeStr  = ((TextClock) findViewById(R.id.time    )).getText().toString();
-        int categoryId  = ((Spinner)   findViewById(R.id.category)).getSelectedItemPosition();
-        String currency = ((EditText)  findViewById(R.id.currency)).getText().toString();
+        String storeName = ((EditText)  findViewById(R.id.store   )).getText().toString();
+        String dateStr   = ((EditText)  findViewById(R.id.date    )).getText().toString();
+        String timeStr   = ((TextClock) findViewById(R.id.time    )).getText().toString();
+        int categoryId   = ((Spinner)   findViewById(R.id.category)).getSelectedItemPosition();
+        String currency  = ((EditText)  findViewById(R.id.currency)).getText().toString();
 
         ExpenseCategory category = ExpenseCategory.values()[categoryId];
 
@@ -108,6 +109,8 @@ public class ReceiptDataActivity extends AppCompatActivity {
 
         datetime = datetime.plusHours(time.getHourOfDay());
         datetime = datetime.plusMinutes(time.getMinuteOfHour());
+
+        Store store = new Store(storeName, null);
 
         return new Receipt(new ArrayList<ReceiptGood>(), store, currency, category, datetime);
     }

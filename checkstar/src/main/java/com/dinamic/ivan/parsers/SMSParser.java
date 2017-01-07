@@ -33,7 +33,7 @@ public class SMSParser extends BaseParser {
     public static class Builder {
         private Options opts = new Options();
 
-        public Builder setAna
+//        public Builder setAna
 
         public Builder useHistory  (Boolean use) { opts.useHistory   = (use == null ? opts.useHistory   : use); return this; }
         public Builder useIncomming(Boolean use) { opts.useIncomming = (use == null ? opts.useIncomming : use); return this; }
@@ -64,8 +64,8 @@ public class SMSParser extends BaseParser {
         final List<Expense> expenses = new ArrayList<Expense>();
         List<SMS> smsHistory = this.getHistory();
 
-        for (SMS sms: smsHistory)
-            analyser.recognizeSMS(sms, onExpensesHistoricalDetected, onExpensesLiveDetected, onSalesDetected);
+//        for (SMS sms: smsHistory)
+//            analyser.recognizeSMS(sms, onExpensesHistoricalDetected, onExpensesLiveDetected, onSalesDetected);
 
         return expenses;
     }
