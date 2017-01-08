@@ -25,7 +25,8 @@ dependencies {
         exclude group: 'com.android.support', module: 'support-annotations'
     })
 
-    compile project(':checkstar')
+    debugCompile project(path: ':checkstar', configuration: "debug")
+    releaseCompile project(path: ':checkstar', configuration: "release")
 
     compile 'com.android.support:appcompat-v7:24.2.1'
     compile 'com.android.support:design:24.2.1'

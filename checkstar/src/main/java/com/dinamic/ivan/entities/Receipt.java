@@ -21,7 +21,7 @@ public class Receipt implements Serializable {
     public Store store;
     public DateTime datetime;
     public List<ReceiptGood> goods;
-    private double sumPrice;
+    private float sumPrice;
 
     public Receipt(List<ReceiptGood> goods, Store store, String currency, ExpenseCategory category, DateTime datetime) {
         this.currency  = currency;
@@ -30,7 +30,7 @@ public class Receipt implements Serializable {
         this.store     = store;
         this.datetime  = datetime;
 
-        this.sumPrice = 0.0;
+        this.sumPrice = 0;
 
         for (ReceiptGood good: goods)
             sumPrice += good.price;
@@ -53,7 +53,7 @@ public class Receipt implements Serializable {
         for (JsonElement good: json.getAsJsonArray("goods"))
             goods.add(ReceiptGood.fromJsonObject(good.getAsJsonObject()));
 
-        return new Receipt(goods, store, currency, ExpenseCategory.valueOf(category), datetime);
+        return new Receipt(goods, store, currency, ExpenseCategory.valueOf(category.toUpperCase()), datetime);
     }
 
     public JsonObject toJsonObject() {
@@ -66,9 +66,9 @@ public class Receipt implements Serializable {
         obj.add("goods", goods);
         obj.add("store", this.store.toJsonObject());
 
-        obj.addProperty("currency",   this.currency);
-        obj.addProperty("category",   this.category.toString());
-        obj.addProperty("datetime",   JSON_DATETIME_FORMAT.print(this.datetime));
+        obj.addProperty("currency", this.currency);
+        obj.addProperty("category", this.category.toString());
+        obj.addProperty("datetime", JSON_DATETIME_FORMAT.print(this.datetime));
 
         return obj;
     }

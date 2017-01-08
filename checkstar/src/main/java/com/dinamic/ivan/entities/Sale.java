@@ -11,7 +11,6 @@ import org.joda.time.format.DateTimeFormatter;
 public class Sale {
     private static DateTimeFormatter JSON_DATETIME_FORMAT = DateTimeFormat.forPattern("dd-MM-yyyy HH:mm");
 
-
     public Store store;
     public String name;
     public String description;

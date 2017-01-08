@@ -133,7 +133,7 @@
         jumboMode="true"
         optimize="true"
         revision="25.0.0"
-        sha1="1e9d7db809ecd4824e32d2cc3b8040016c3e0363">
+        sha1="baef64dece4cce6d712386787316ebd5593ea63e">
         <dex dex="/home/slushkov/check/receipts2/app/build/intermediates/transforms/dex/debug/folders/1000/10/instant-run-bootstrap_aeb87358ec9398b55e35f483fbc03e58a367abc6/classes.dex" />
     </item>
     <item
@@ -160,7 +160,7 @@
         jumboMode="true"
         optimize="true"
         revision="25.0.0"
-        sha1="8000a22d01765213665e5a008f9ebe38ddfc7334">
+        sha1="76d01eb30ef8ce703fc4f2c10b21e4f25fe33d36">
         <dex dex="/home/slushkov/check/receipts2/app/build/intermediates/transforms/dex/debug/folders/1000/10/instant-run_86f1626b4e7262cfae156e2429711dcba1a1f37d/classes.dex" />
     </item>
     <item

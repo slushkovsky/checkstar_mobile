@@ -8,11 +8,11 @@ import android.util.Log;
 
 import com.dinamic.ivan.entities.Expense;
 import com.dinamic.ivan.entities.Sale;
-import com.dinamic.ivan.parsers.GmailAnalyser;
+import com.dinamic.ivan.parsers.GmailParser;
 import com.dinamic.ivan.parsers.LocationAnalyser;
 import com.dinamic.ivan.parsers.NotificationAnayser;
 import com.dinamic.ivan.entities.Receipt;
-import com.dinamic.ivan.parsers.ReceiptAnalyser;
+import com.dinamic.ivan.parsers.ReceiptParser;
 import com.dinamic.ivan.server.StorageApi;
 import com.dinamic.ivan.parsers.SMSParser;
 import com.koushikdutta.async.future.FutureCallback;
@@ -43,6 +43,7 @@ public class ReceiptSDK {
 
         FutureCallback<List<Expense>> onExpenses;
         FutureCallback<List<Sale>>    onSales;
+        FutureCallback<Receipt>       onReceiptRecognized;
     }
 
     public static class Builder {
@@ -61,8 +62,9 @@ public class ReceiptSDK {
 
         public Builder setUserId(String userId) { opts.userId = userId; return this; }
 
-        public Builder onExpenses(FutureCallback<List<Expense>> callback) { opts.onExpenses = callback; return this; }
-        public Builder onSales   (FutureCallback<List<Sale>>    callback) { opts.onSales    = callback; return this; }
+        public Builder onExpenses         (FutureCallback<List<Expense>> callback) { opts.onExpenses          = callback; return this; }
+        public Builder onSales            (FutureCallback<List<Sale>>    callback) { opts.onSales             = callback; return this; }
+        public Builder onReceiptRecognized(FutureCallback<Receipt>       callback) { opts.onReceiptRecognized = callback; return this; }
 
         public ReceiptSDK build(Context context) {
             SharedPreferences prefs = PreferenceManager.getDefaultSharedPreferences(context);
@@ -97,9 +99,9 @@ public class ReceiptSDK {
 //    private LogicApi serverApi  = null;
     private StorageApi storageApi = null;
 
-    private ReceiptAnalyser     receiptsAnalyser    = null;
+    private ReceiptParser receiptsAnalyser    = null;
     private SMSParser           smsAnalyser         = null;
-    private GmailAnalyser       gmailAnalyser       = null;
+    private GmailParser gmailAnalyser       = null;
     private NotificationAnayser notificationAnayser = null;
     private LocationAnalyser    locationAnalyser    = null;
 
@@ -110,35 +112,41 @@ public class ReceiptSDK {
 //        this.serverApi  = new LogicApi  (context, opts.userId);
         this.storageApi = new StorageApi(context, opts.userId);
 
-        this.receiptsAnalyser = new ReceiptAnalyser(context);
+        this.receiptsAnalyser = new ReceiptParser.Builder()
+            .onRecognized(opts.onReceiptRecognized)
+            .build(context);
 
+        /*
         this.smsAnalyser = new SMSParser.Builder()
             .useHistory  (opts.useSmsHistory)
             .useIncomming(opts.useSmsIncomming)
             .onExpenses  (opts.onExpenses)
             .onSales     (opts.onSales)
+            .build(context);*/
+
+        this.gmailAnalyser = new GmailParser.Builder()
+            .useHistory  (opts.useGmailHistory)
+            .useIncomming(opts.useGmailIncomming)
+            .onExpenses  (opts.onExpenses)
+            .onSales     (opts.onSales)
             .build(context);
+
 
         /*
-        this.gmailAnalyser = new GmailAnalyser.Builder()
-            .useHistory          (opts.useGmailHistory)
-            .useIncomming        (opts.useGmailIncomming)
-            .onExpensesHistorical(opts.onExpensesHistory)
-            .onExpensesNew       (opts.onExpensesNew)
-            .onSalesHistorical   (opts.onSalesHistory)
-            .onSalesNew          (opts.onSalesNew)
-            .build(context);
-           */
-
         if (opts.useNotifications)
-            this.notificationAnayser = new NotificationAnayser();
+            this.notificationAnayser = new NotificationAnayser();*/
 
 //        if (opts.useLocation)
 //            this.locationAnalyser = new LocationAnalyser(); // TODO: Sales shops
     }
 
+    public void captureReceipt() {
+        this.receiptsAnalyser.capture();
+    }
+
     public void onActivityResuilt(int requestCode, int resultCode, final Intent intent) {
         this.gmailAnalyser.onActivityResult(requestCode, resultCode, intent);
+        this.receiptsAnalyser.onActivityResult(requestCode, resultCode, intent);
     }
 
     public void getReсeiptsBackup(FutureCallback<List<Receipt>> onResult){

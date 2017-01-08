@@ -42,34 +42,37 @@ public class OnlineAnalyser extends BaseAnalyser {
            .setJsonObjectBody(sms.toJsonObject())
            .asJsonObject()
            .setCallback(new FutureCallback<JsonObject>() {
-                    @Override
-                    public void onCompleted(Exception e, JsonObject response) {
-                        throwIfBadResponse(e, response);
+               @Override
+               public void onCompleted(Exception e, JsonObject response) {
+                   throwIfBadResponse(e, response);
 
-                        JsonArray jsonExpensesArray = response.get("result").getAsJsonObject().get("expenses").getAsJsonArray();
-                        JsonArray jsonSalesArray    = response.get("result").getAsJsonObject().get("sales")   .getAsJsonArray();
+                   JsonArray jsonExpensesArray = response.get("result").getAsJsonObject().get("expenses").getAsJsonArray();
+                   JsonArray jsonSalesArray    = response.get("result").getAsJsonObject().get("sales")   .getAsJsonArray();
 
-                        List<Expense> expenses = new ArrayList<Expense>();
-                        List<Sale> sales = new ArrayList<Sale>();
+                   List<Expense> expenses = new ArrayList<Expense>();
+                   List<Sale> sales = new ArrayList<Sale>();
 
-                        for (JsonElement el: jsonExpensesArray) {
-                            Expense expense = Expense.fromJsonObject(el.getAsJsonObject());
-                            expense.detectedIn = DetectedIn.SMS;
+                   for (JsonElement el: jsonExpensesArray) {
+                       Expense expense = Expense.fromJsonObject(el.getAsJsonObject());
+                       expense.detectedIn = DetectedIn.SMS;
 
-                            expenses.add(expense);
-                        }
+                       expenses.add(expense);
+                   }
 
-                        for (JsonElement el: jsonSalesArray) {
-                            Sale sale = Sale.fromJsonObject(el.getAsJsonObject());
-                            sale.detectedIn = DetectedIn.SMS;
+                   for (JsonElement el: jsonSalesArray) {
+                       Sale sale = Sale.fromJsonObject(el.getAsJsonObject());
+                       sale.detectedIn = DetectedIn.SMS;
 
-                            sales.add(sale);
-                        }
+                       sales.add(sale);
+                   }
 
-                        onExpenses.onCompleted(null, expenses);
-                        onSales.onCompleted(null, sales);
-                    }
-                });
+                   if (expenses.size() != 0)
+                       onExpenses.onCompleted(null, expenses);
+
+                   if (sales.size() != 0)
+                       onSales.onCompleted(null, sales);
+               }
+           });
     }
 
     @Override
@@ -83,7 +86,7 @@ public class OnlineAnalyser extends BaseAnalyser {
                     public void onCompleted(Exception e, JsonObject response) {
                         throwIfBadResponse(e, response);
 
-                        JsonObject receiptJsonData = response.get("receipt_data").getAsJsonObject();
+                        JsonObject receiptJsonData = response.get("result").getAsJsonObject();
                         onResponse.onCompleted(null, Receipt.fromJsonObject(receiptJsonData));
                     }
                 });
@@ -132,6 +135,7 @@ public class OnlineAnalyser extends BaseAnalyser {
         JsonObject state = new JsonObject();
         state.addProperty("id", userId);
 
+        /*
         Ion.with(context)
                 .load(BASE_URL + String.format("/google_access?code=%1$s&state=%2$s", serverCode, state.toString()))
                 .asJsonObject()
@@ -140,7 +144,22 @@ public class OnlineAnalyser extends BaseAnalyser {
                     public void onCompleted(Exception e, JsonObject response) {
                         throwIfBadResponse(e, response);
                     }
-                });
+                });*/
+
+        JsonObject body = new JsonObject();
+        body.addProperty("auth_code", serverCode);
+
+        Ion.with(context)
+           .load(BASE_URL + "/recognize/gmail")
+           .setJsonObjectBody(body)
+           .asJsonObject()
+           .setCallback(new FutureCallback<JsonObject>() {
+               @Override
+               public void onCompleted(Exception e, JsonObject response) {
+                   throwIfBadResponse(e, response);
+                   // TODO: Get expenses and sales
+               }
+           });
     }
 
     private boolean throwIfBadResponse(Exception e, JsonObject resp) {
