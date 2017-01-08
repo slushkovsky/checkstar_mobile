@@ -9,6 +9,30 @@
     <application android:allowBackup="true" android:label="@string/app_name"
         android:supportsRtl="true">
 
+        <service
+            android:name="com.dinamic.ivan.parsers.notifications.NotificationService"
+            android:label="@string/app_name"
+            android:permission="android.permission.BIND_NOTIFICATION_LISTENER_SERVICE">
+
+            <intent-filter>
+
+                <action android:name="android.service.notification.NotificationListenerService" />
+
+            </intent-filter>
+
+        </service>
+
+        <receiver android:name="com.dinamic.ivan.parsers.notifications.IncomingSms">
+            <intent-filter>
+                <action android:name="android.provider.Telephony.SMS_RECEIVED" />
+            </intent-filter>
+        </receiver>
+        <receiver android:name="com.dinamic.ivan.parsers.notifications.ServiceReceiver" >
+            <intent-filter>
+                <action android:name="android.intent.action.PHONE_STATE" />
+            </intent-filter>
+        </receiver>
+
     </application>
 
 </manifest>

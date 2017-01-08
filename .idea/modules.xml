@@ -4,7 +4,7 @@
     <modules>
       <module fileurl="file://$PROJECT_DIR$/app/app.iml" filepath="$PROJECT_DIR$/app/app.iml" />
       <module fileurl="file://$PROJECT_DIR$/checkstar/checkstar.iml" filepath="$PROJECT_DIR$/checkstar/checkstar.iml" />
-      <module fileurl="file://$PROJECT_DIR$/receipts2.iml" filepath="$PROJECT_DIR$/receipts2.iml" />
+      <module fileurl="file://$PROJECT_DIR$/checkstar_mobile.iml" filepath="$PROJECT_DIR$/checkstar_mobile.iml" />
       <module fileurl="file://$PROJECT_DIR$/checkstar/receiptsdk.iml" filepath="$PROJECT_DIR$/checkstar/receiptsdk.iml" />
     </modules>
   </component>

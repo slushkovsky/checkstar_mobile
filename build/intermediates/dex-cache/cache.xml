@@ -3,327 +3,318 @@
 
     <item
         is-multidex="true"
-        jar="/home/slushkov/check/receipts2/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-tasks/9.8.0/jars/classes.jar"
-        jumboMode="true"
-        optimize="true"
-        revision="25.0.0"
-        sha1="bf2e1838e4428616c1aa26edf43de72b5b99bf84">
-        <dex dex="/home/slushkov/check/receipts2/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.google.android.gms-play-services-tasks-9.8.0_2acba9598fd6840d47336e06bcce57934a86550d/classes.dex" />
-    </item>
-    <item
-        is-multidex="true"
-        jar="/home/slushkov/check/receipts2/app/build/intermediates/exploded-aar/com.google.firebase/firebase-analytics-impl/9.8.0/jars/classes.jar"
+        jar="/home/ivan/workspace/checkstar_mobile/app/build/intermediates/exploded-aar/com.google.firebase/firebase-analytics-impl/9.8.0/jars/classes.jar"
         jumboMode="true"
         optimize="true"
         revision="25.0.0"
         sha1="190a642ba16d1421296a4d794606279b80039c59">
-        <dex dex="/home/slushkov/check/receipts2/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.google.firebase-firebase-analytics-impl-9.8.0_63ebed76322fac06ac6bd1382beaeed11727f559/classes.dex" />
+        <dex dex="/home/ivan/workspace/checkstar_mobile/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.google.firebase-firebase-analytics-impl-9.8.0_b8727ac0810486dda4db1d3bd73e892c2ab9bf44/classes.dex" />
     </item>
     <item
         is-multidex="true"
-        jar="/home/slushkov/check/receipts2/app/build/intermediates/exploded-aar/com.google.firebase/firebase-iid/9.8.0/jars/classes.jar"
-        jumboMode="true"
-        optimize="true"
-        revision="25.0.0"
-        sha1="6b6f292b8b951dcf2ecf2b20853e3eabc7d65c48">
-        <dex dex="/home/slushkov/check/receipts2/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.google.firebase-firebase-iid-9.8.0_022ccac0c8aed28189835dd50f23c33f7b997921/classes.dex" />
-    </item>
-    <item
-        is-multidex="true"
-        jar="/home/slushkov/check/receipts2/app/build/intermediates/exploded-aar/com.android.support/support-media-compat/24.2.1/jars/libs/internal_impl-24.2.1.jar"
-        jumboMode="true"
-        optimize="true"
-        revision="25.0.0"
-        sha1="fbf8da429efd5ad21e02e3e5ecaa1efc4167878d">
-        <dex dex="/home/slushkov/check/receipts2/app/build/intermediates/transforms/dex/debug/folders/1000/10/internal_impl-24.2.1_8afd360dbea807ee863eb34d719639112ef7b075/classes.dex" />
-    </item>
-    <item
-        is-multidex="true"
-        jar="/home/slushkov/check/receipts2/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-auth/9.8.0/jars/classes.jar"
-        jumboMode="true"
-        optimize="true"
-        revision="25.0.0"
-        sha1="ca851be26ff89f5b32cc222cee98139fb3fac830">
-        <dex dex="/home/slushkov/check/receipts2/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.google.android.gms-play-services-auth-9.8.0_0657aaaf45656387518afbfe79365478be260785/classes.dex" />
-    </item>
-    <item
-        is-multidex="true"
-        jar="/home/slushkov/check/receipts2/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-auth-base/9.8.0/jars/classes.jar"
-        jumboMode="true"
-        optimize="true"
-        revision="25.0.0"
-        sha1="a1ed98e01bd58976d80c062fd0ea2968a1ff68a1">
-        <dex dex="/home/slushkov/check/receipts2/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.google.android.gms-play-services-auth-base-9.8.0_a03984e5a85b0e71254b16d7d00dbba189ffbb7e/classes.dex" />
-    </item>
-    <item
-        is-multidex="true"
-        jar="/home/slushkov/check/receipts2/app/build/intermediates/exploded-aar/com.koushikdutta.async/androidasync/2.1.9/jars/classes.jar"
-        jumboMode="true"
-        optimize="true"
-        revision="25.0.0"
-        sha1="60d0e28fe7ab6da6c03b54cd8ede502284d51a81">
-        <dex dex="/home/slushkov/check/receipts2/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.koushikdutta.async-androidasync-2.1.9_7512fabcaa52fcd01d540654fcb27231147a4cd0/classes.dex" />
-    </item>
-    <item
-        is-multidex="true"
-        jar="/home/slushkov/check/receipts2/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-basement/9.8.0/jars/classes.jar"
-        jumboMode="true"
-        optimize="true"
-        revision="25.0.0"
-        sha1="9f6d236bac26d02b410e4ee186ba517ace5ee661">
-        <dex dex="/home/slushkov/check/receipts2/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.google.android.gms-play-services-basement-9.8.0_b95a5ec14648b33e3456dc37dc7b369d4d873d50/classes.dex" />
-    </item>
-    <item
-        is-multidex="true"
-        jar="/home/slushkov/check/receipts2/app/build/intermediates/exploded-aar/com.android.support/support-core-utils/24.2.1/jars/libs/internal_impl-24.2.1.jar"
-        jumboMode="true"
-        optimize="true"
-        revision="25.0.0"
-        sha1="935a969265b2a166b2d20415423f5f6e90fe16e0">
-        <dex dex="/home/slushkov/check/receipts2/app/build/intermediates/transforms/dex/debug/folders/1000/10/internal_impl-24.2.1_7fad28b3de228900ac6b048f1ae13b74682926b8/classes.dex" />
-    </item>
-    <item
-        is-multidex="true"
-        jar="/home/slushkov/check/receipts2/app/build/intermediates/exploded-aar/com.android.support/support-core-utils/24.2.1/jars/classes.jar"
-        jumboMode="true"
-        optimize="true"
-        revision="25.0.0"
-        sha1="9c4c3bc902450c39ed54de170db4fb12aea20a35">
-        <dex dex="/home/slushkov/check/receipts2/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.android.support-support-core-utils-24.2.1_f966b93dc831cfdb59ae145c06d41202ce51f3fa/classes.dex" />
-    </item>
-    <item
-        is-multidex="true"
-        jar="/home/slushkov/.gradle/caches/modules-2/files-2.1/com.google.code.gson/gson/2.3/5fc52c41ef0239d1093a1eb7c3697036183677ce/gson-2.3.jar"
-        jumboMode="true"
-        optimize="true"
-        revision="25.0.0"
-        sha1="5fc52c41ef0239d1093a1eb7c3697036183677ce">
-        <dex dex="/home/slushkov/check/receipts2/app/build/intermediates/transforms/dex/debug/folders/1000/10/gson-2.3_d9bffc6d00122d9dd354e79de9b2a2b964b97fc8/classes.dex" />
-    </item>
-    <item
-        is-multidex="true"
-        jar="/home/slushkov/check/receipts2/app/build/intermediates/exploded-aar/com.android.support/support-compat/24.2.1/jars/libs/internal_impl-24.2.1.jar"
-        jumboMode="true"
-        optimize="true"
-        revision="25.0.0"
-        sha1="7e4389bd133359a2ff88623ff1e4ff93d6e6f780">
-        <dex dex="/home/slushkov/check/receipts2/app/build/intermediates/transforms/dex/debug/folders/1000/10/internal_impl-24.2.1_be3e08aa399e37a032600954f42a96573ee91ff9/classes.dex" />
-    </item>
-    <item
-        is-multidex="true"
-        jar="/home/slushkov/check/receipts2/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-base/9.8.0/jars/classes.jar"
-        jumboMode="true"
-        optimize="true"
-        revision="25.0.0"
-        sha1="7e92aadd0697922316d1395c1887a23aebec640a">
-        <dex dex="/home/slushkov/check/receipts2/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.google.android.gms-play-services-base-9.8.0_055d84afb4610fc3932c2f3db6827e2609ad2032/classes.dex" />
-    </item>
-    <item
-        is-multidex="true"
-        jar="/home/slushkov/check/receipts2/app/build/intermediates/exploded-aar/com.android.support/support-compat/24.2.1/jars/classes.jar"
-        jumboMode="true"
-        optimize="true"
-        revision="25.0.0"
-        sha1="0ecb4b595fa0f0f8018a149ace3ea6525624f94e">
-        <dex dex="/home/slushkov/check/receipts2/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.android.support-support-compat-24.2.1_6c29d69a3881ccba1d26f237a7fd3949362de3cc/classes.dex" />
-    </item>
-    <item
-        is-multidex="true"
-        jar="/home/slushkov/check/receipts2/app/build/intermediates/incremental-classes/debug/instant-run-bootstrap.jar"
-        jumboMode="true"
-        optimize="true"
-        revision="25.0.0"
-        sha1="baef64dece4cce6d712386787316ebd5593ea63e">
-        <dex dex="/home/slushkov/check/receipts2/app/build/intermediates/transforms/dex/debug/folders/1000/10/instant-run-bootstrap_aeb87358ec9398b55e35f483fbc03e58a367abc6/classes.dex" />
-    </item>
-    <item
-        is-multidex="true"
-        jar="/home/slushkov/check/receipts2/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-iid/9.8.0/jars/classes.jar"
-        jumboMode="true"
-        optimize="true"
-        revision="25.0.0"
-        sha1="85299bf1924dde0200109a58033c5ef84ecb6991">
-        <dex dex="/home/slushkov/check/receipts2/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.google.android.gms-play-services-iid-9.8.0_5c54320c459aec88c5fa2bd7d0f980aec43b71ad/classes.dex" />
-    </item>
-    <item
-        is-multidex="true"
-        jar="/home/slushkov/check/receipts2/app/build/intermediates/exploded-aar/com.android.support/animated-vector-drawable/24.2.1/jars/classes.jar"
-        jumboMode="true"
-        optimize="true"
-        revision="25.0.0"
-        sha1="94bc1dfb84dcc8b6f6f8f7cc726d7b2dd39c1574">
-        <dex dex="/home/slushkov/check/receipts2/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.android.support-animated-vector-drawable-24.2.1_d2af67e242988ddb8b30b3f01eed1e5a49e3ce5c/classes.dex" />
-    </item>
-    <item
-        is-multidex="true"
-        jar="/home/slushkov/check/receipts2/app/build/intermediates/incremental-runtime-classes/debug/instant-run.jar"
-        jumboMode="true"
-        optimize="true"
-        revision="25.0.0"
-        sha1="76d01eb30ef8ce703fc4f2c10b21e4f25fe33d36">
-        <dex dex="/home/slushkov/check/receipts2/app/build/intermediates/transforms/dex/debug/folders/1000/10/instant-run_86f1626b4e7262cfae156e2429711dcba1a1f37d/classes.dex" />
-    </item>
-    <item
-        is-multidex="true"
-        jar="/home/slushkov/Android/Sdk/extras/m2repository/com/android/support/constraint/constraint-layout-solver/1.0.0-alpha8/constraint-layout-solver-1.0.0-alpha8.jar"
-        jumboMode="true"
-        optimize="true"
-        revision="25.0.0"
-        sha1="80c371a4fd5e1b77f0e3a25b171356878543ffdd">
-        <dex dex="/home/slushkov/check/receipts2/app/build/intermediates/transforms/dex/debug/folders/1000/10/constraint-layout-solver-1.0.0-alpha8_d8e4a2ba1e5c533bac78ccd16e5d002890b7f2f5/classes.dex" />
-    </item>
-    <item
-        is-multidex="true"
-        jar="/home/slushkov/check/receipts2/app/build/intermediates/exploded-aar/com.android.support/support-v4/24.2.1/jars/classes.jar"
-        jumboMode="true"
-        optimize="true"
-        revision="25.0.0"
-        sha1="d7c42c80f6509b9ea4db28ca7859ffae08ec5741">
-        <dex dex="/home/slushkov/check/receipts2/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.android.support-support-v4-24.2.1_5ac3a928e4a3f902f892bb3bddf2abde9037913c/classes.dex" />
-    </item>
-    <item
-        is-multidex="true"
-        jar="/home/slushkov/Android/Sdk/extras/android/m2repository/com/android/support/support-annotations/24.2.1/support-annotations-24.2.1.jar"
-        jumboMode="true"
-        optimize="true"
-        revision="25.0.0"
-        sha1="8de3aafecbdf98a61db6427f008f2d515bcd2544">
-        <dex dex="/home/slushkov/check/receipts2/app/build/intermediates/transforms/dex/debug/folders/1000/10/support-annotations-24.2.1_7b45170333d38afea73f4a07d6739f7dd503c319/classes.dex" />
-    </item>
-    <item
-        is-multidex="true"
-        jar="/home/slushkov/check/receipts2/app/build/intermediates/exploded-aar/com.android.support/support-core-ui/24.2.1/jars/classes.jar"
-        jumboMode="true"
-        optimize="true"
-        revision="25.0.0"
-        sha1="e7f3132168957eefc46229fc32c3bd464642b71e">
-        <dex dex="/home/slushkov/check/receipts2/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.android.support-support-core-ui-24.2.1_772614d3101aa0ab30b7791d72d7fe4d27599481/classes.dex" />
-    </item>
-    <item
-        is-multidex="true"
-        jar="/home/slushkov/check/receipts2/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-gcm/9.8.0/jars/classes.jar"
-        jumboMode="true"
-        optimize="true"
-        revision="25.0.0"
-        sha1="9dae58326f6f6a515022468cce56dd04ec3b9fdb">
-        <dex dex="/home/slushkov/check/receipts2/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.google.android.gms-play-services-gcm-9.8.0_9b912ae58d380f1ffa84a333c4d6b584aba5f774/classes.dex" />
-    </item>
-    <item
-        is-multidex="true"
-        jar="/home/slushkov/check/receipts2/app/build/intermediates/exploded-aar/com.android.support/support-fragment/24.2.1/jars/classes.jar"
-        jumboMode="true"
-        optimize="true"
-        revision="25.0.0"
-        sha1="b9a1ac78ad7ef3abedc4a4b30cd92bcacb939d1f">
-        <dex dex="/home/slushkov/check/receipts2/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.android.support-support-fragment-24.2.1_df1c6bfc8b9440095f068474d2ec5d5ec2dabd68/classes.dex" />
-    </item>
-    <item
-        is-multidex="true"
-        jar="/home/slushkov/check/receipts2/app/build/intermediates/exploded-aar/com.android.support/support-core-ui/24.2.1/jars/libs/internal_impl-24.2.1.jar"
-        jumboMode="true"
-        optimize="true"
-        revision="25.0.0"
-        sha1="867dad63c33388ff8c7644b236579355036d075f">
-        <dex dex="/home/slushkov/check/receipts2/app/build/intermediates/transforms/dex/debug/folders/1000/10/internal_impl-24.2.1_f63665055d6c5be7364efdc5ac8ceb9e36ac7b96/classes.dex" />
-    </item>
-    <item
-        is-multidex="true"
-        jar="/home/slushkov/check/receipts2/app/build/intermediates/exploded-aar/com.google.firebase/firebase-common/9.8.0/jars/classes.jar"
-        jumboMode="true"
-        optimize="true"
-        revision="25.0.0"
-        sha1="c61641e333fa88da21758bab8cc28ee16604b05f">
-        <dex dex="/home/slushkov/check/receipts2/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.google.firebase-firebase-common-9.8.0_f88c440f36bc669cea30ac944e1b35b74a75f51b/classes.dex" />
-    </item>
-    <item
-        is-multidex="true"
-        jar="/home/slushkov/check/receipts2/app/build/intermediates/exploded-aar/com.android.support/support-vector-drawable/24.2.1/jars/classes.jar"
-        jumboMode="true"
-        optimize="true"
-        revision="25.0.0"
-        sha1="d5c731fc64c03dfe04d51134955b483551c35849">
-        <dex dex="/home/slushkov/check/receipts2/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.android.support-support-vector-drawable-24.2.1_4773351c89bff22e595f4d9e6af1e7593459fa52/classes.dex" />
-    </item>
-    <item
-        is-multidex="true"
-        jar="/home/slushkov/check/receipts2/app/build/intermediates/exploded-aar/com.android.support.constraint/constraint-layout/1.0.0-alpha8/jars/classes.jar"
-        jumboMode="true"
-        optimize="true"
-        revision="25.0.0"
-        sha1="0e753ea8d0a2dea270da7d96a7d6e9d2e9c10f94">
-        <dex dex="/home/slushkov/check/receipts2/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.android.support.constraint-constraint-layout-1.0.0-alpha8_57a06b690bf0e204b5126dc38f7db0bb6722f44f/classes.dex" />
-    </item>
-    <item
-        is-multidex="true"
-        jar="/home/slushkov/check/receipts2/app/build/intermediates/exploded-aar/com.android.support/support-fragment/24.2.1/jars/libs/internal_impl-24.2.1.jar"
-        jumboMode="true"
-        optimize="true"
-        revision="25.0.0"
-        sha1="5f64d657e838e8375135c0f6057a7ff8fab6a50e">
-        <dex dex="/home/slushkov/check/receipts2/app/build/intermediates/transforms/dex/debug/folders/1000/10/internal_impl-24.2.1_975e7e58af97d967f5981983cd4a469920f4fcde/classes.dex" />
-    </item>
-    <item
-        is-multidex="true"
-        jar="/home/slushkov/check/receipts2/app/build/intermediates/exploded-aar/com.google.firebase/firebase-analytics/9.8.0/jars/classes.jar"
-        jumboMode="true"
-        optimize="true"
-        revision="25.0.0"
-        sha1="9ff04cc3470178a44512624036751a803418c2ca">
-        <dex dex="/home/slushkov/check/receipts2/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.google.firebase-firebase-analytics-9.8.0_de66805c7d6b20ad139e476b9539d63eb42d1f29/classes.dex" />
-    </item>
-    <item
-        is-multidex="true"
-        jar="/home/slushkov/check/receipts2/app/build/intermediates/exploded-aar/com.koushikdutta.ion/ion/2.1.9/jars/classes.jar"
+        jar="/home/ivan/workspace/checkstar_mobile/app/build/intermediates/exploded-aar/com.koushikdutta.ion/ion/2.1.9/jars/classes.jar"
         jumboMode="true"
         optimize="true"
         revision="25.0.0"
         sha1="7e54ea31584406fcc68225a8656f384c333ff2ee">
-        <dex dex="/home/slushkov/check/receipts2/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.koushikdutta.ion-ion-2.1.9_14e1928bc17e6d921e4dce57c4c194632b562a7d/classes.dex" />
+        <dex dex="/home/ivan/workspace/checkstar_mobile/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.koushikdutta.ion-ion-2.1.9_6d76d9fde468e1f300861bdfb096287bf3736344/classes.dex" />
     </item>
     <item
         is-multidex="true"
-        jar="/home/slushkov/check/receipts2/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/24.2.1/jars/classes.jar"
-        jumboMode="true"
-        optimize="true"
-        revision="25.0.0"
-        sha1="43b2dba6b5a0b14527961b75329d0b90025f15ea">
-        <dex dex="/home/slushkov/check/receipts2/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.android.support-appcompat-v7-24.2.1_276e8542848c5a1212b2ab113f82507fdfbc3411/classes.dex" />
-    </item>
-    <item
-        is-multidex="true"
-        jar="/home/slushkov/check/receipts2/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-appindexing/9.8.0/jars/classes.jar"
-        jumboMode="true"
-        optimize="true"
-        revision="25.0.0"
-        sha1="e3234cd25e23069abd48ecd2117bc0e8011bf45a">
-        <dex dex="/home/slushkov/check/receipts2/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.google.android.gms-play-services-appindexing-9.8.0_88e9284c934cef0232eb327aac2169954e35593c/classes.dex" />
-    </item>
-    <item
-        is-multidex="true"
-        jar="/home/slushkov/check/receipts2/app/build/intermediates/exploded-aar/com.android.support/recyclerview-v7/24.2.1/jars/classes.jar"
+        jar="/home/ivan/workspace/checkstar_mobile/app/build/intermediates/exploded-aar/com.android.support/recyclerview-v7/24.2.1/jars/classes.jar"
         jumboMode="true"
         optimize="true"
         revision="25.0.0"
         sha1="7521486d9bfd2cd9e756e0cf75ed7d97f2ce2d3b">
-        <dex dex="/home/slushkov/check/receipts2/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.android.support-recyclerview-v7-24.2.1_ede89a8606322430c2180e64a473313f184bbeef/classes.dex" />
+        <dex dex="/home/ivan/workspace/checkstar_mobile/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.android.support-recyclerview-v7-24.2.1_21dbd21241b0b8640ce11dd81a5176d2f06931d3/classes.dex" />
     </item>
     <item
         is-multidex="true"
-        jar="/home/slushkov/.gradle/caches/modules-2/files-2.1/org.jbundle.util.osgi.wrapped/org.jbundle.util.osgi.wrapped.org.apache.http.client/4.1.2/98c86e42679fe7ac066f6c242e0d14f0bce0bb7c/org.jbundle.util.osgi.wrapped.org.apache.http.client-4.1.2.jar"
+        jar="/home/ivan/workspace/checkstar_mobile/app/build/intermediates/exploded-aar/com.android.support/support-compat/24.2.1/jars/classes.jar"
         jumboMode="true"
         optimize="true"
         revision="25.0.0"
-        sha1="98c86e42679fe7ac066f6c242e0d14f0bce0bb7c">
-        <dex dex="/home/slushkov/check/receipts2/app/build/intermediates/transforms/dex/debug/folders/1000/10/org.jbundle.util.osgi.wrapped.org.apache.http.client-4.1.2_897619586b2b33e0d856c004dce0a98186b325b5/classes.dex" />
+        sha1="0ecb4b595fa0f0f8018a149ace3ea6525624f94e">
+        <dex dex="/home/ivan/workspace/checkstar_mobile/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.android.support-support-compat-24.2.1_91626b3d36300505e8dc7a65f58a8c13a83f1512/classes.dex" />
     </item>
     <item
         is-multidex="true"
-        jar="/home/slushkov/check/receipts2/app/build/intermediates/exploded-aar/com.android.support/design/24.2.1/jars/classes.jar"
+        jar="/home/ivan/workspace/checkstar_mobile/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-gcm/9.8.0/jars/classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.0"
+        sha1="9dae58326f6f6a515022468cce56dd04ec3b9fdb">
+        <dex dex="/home/ivan/workspace/checkstar_mobile/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.google.android.gms-play-services-gcm-9.8.0_d82bf55859df8ca20a80e7be38a05177fe284c48/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/home/ivan/workspace/checkstar_mobile/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-appindexing/9.8.0/jars/classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.0"
+        sha1="e3234cd25e23069abd48ecd2117bc0e8011bf45a">
+        <dex dex="/home/ivan/workspace/checkstar_mobile/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.google.android.gms-play-services-appindexing-9.8.0_9526094c510ff5ffb3c9416c477bdb61bcf67e8f/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/home/ivan/workspace/checkstar_mobile/app/build/intermediates/exploded-aar/com.android.support/design/24.2.1/jars/classes.jar"
         jumboMode="true"
         optimize="true"
         revision="25.0.0"
         sha1="e03f47f3d1017a093bb3239d4ec47c3447f40744">
-        <dex dex="/home/slushkov/check/receipts2/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.android.support-design-24.2.1_e8b31c71c0539e74a1177dc41a3e8dda9d7df10d/classes.dex" />
+        <dex dex="/home/ivan/workspace/checkstar_mobile/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.android.support-design-24.2.1_2bd0eb0a430bc26db06a257e523b31aa4ba20e82/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/home/ivan/workspace/checkstar_mobile/app/build/intermediates/incremental-classes/debug/instant-run-bootstrap.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.0"
+        sha1="59871ebc8c4bb9c9bc1df88b0d51d9b0d3ccbee7">
+        <dex dex="/home/ivan/workspace/checkstar_mobile/app/build/intermediates/transforms/dex/debug/folders/1000/10/instant-run-bootstrap_2f3f592018fa6baf86af82e82522defed8a03206/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/home/ivan/workspace/checkstar_mobile/app/build/intermediates/incremental-runtime-classes/debug/instant-run.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.0"
+        sha1="2ff5710b5021ebf089810260eb2d0705baa1f721">
+        <dex dex="/home/ivan/workspace/checkstar_mobile/app/build/intermediates/transforms/dex/debug/folders/1000/10/instant-run_d8a8d23a49ae817f25c62cc8255ac99538181c34/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/home/ivan/workspace/checkstar_mobile/app/build/intermediates/exploded-aar/com.android.support/animated-vector-drawable/24.2.1/jars/classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.0"
+        sha1="94bc1dfb84dcc8b6f6f8f7cc726d7b2dd39c1574">
+        <dex dex="/home/ivan/workspace/checkstar_mobile/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.android.support-animated-vector-drawable-24.2.1_f68dce96dfc52225bc2f632efab417ac8d8074eb/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/home/ivan/workspace/checkstar_mobile/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-base/9.8.0/jars/classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.0"
+        sha1="7e92aadd0697922316d1395c1887a23aebec640a">
+        <dex dex="/home/ivan/workspace/checkstar_mobile/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.google.android.gms-play-services-base-9.8.0_e40691f94c6146de91361c14e0e6177e44ae7fa9/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/home/ivan/Android/Sdk/extras/m2repository/com/android/support/constraint/constraint-layout-solver/1.0.0-alpha8/constraint-layout-solver-1.0.0-alpha8.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.0"
+        sha1="80c371a4fd5e1b77f0e3a25b171356878543ffdd">
+        <dex dex="/home/ivan/workspace/checkstar_mobile/app/build/intermediates/transforms/dex/debug/folders/1000/10/constraint-layout-solver-1.0.0-alpha8_adc440c1bc7c527df4460efae674baf688656103/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/home/ivan/workspace/checkstar_mobile/app/build/intermediates/exploded-aar/com.android.support/support-vector-drawable/24.2.1/jars/classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.0"
+        sha1="d5c731fc64c03dfe04d51134955b483551c35849">
+        <dex dex="/home/ivan/workspace/checkstar_mobile/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.android.support-support-vector-drawable-24.2.1_1778a4672e7d3d3a0c711a5fa118bf82e6e9bc0d/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/home/ivan/workspace/checkstar_mobile/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-tasks/9.8.0/jars/classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.0"
+        sha1="bf2e1838e4428616c1aa26edf43de72b5b99bf84">
+        <dex dex="/home/ivan/workspace/checkstar_mobile/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.google.android.gms-play-services-tasks-9.8.0_69399968446771ca9baa984282a90000d464e53a/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/home/ivan/.gradle/caches/modules-2/files-2.1/joda-time/joda-time/2.9.7/6eb2e87ddb09e944bb88f06f19ba0638d4607ffd/joda-time-2.9.7.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.0"
+        sha1="6eb2e87ddb09e944bb88f06f19ba0638d4607ffd">
+        <dex dex="/home/ivan/workspace/checkstar_mobile/app/build/intermediates/transforms/dex/debug/folders/1000/10/joda-time-2.9.7_4778257b9f55542d03d81678fb96738ba8239a0c/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/home/ivan/workspace/checkstar_mobile/app/build/intermediates/exploded-aar/com.android.support/support-core-ui/24.2.1/jars/classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.0"
+        sha1="e7f3132168957eefc46229fc32c3bd464642b71e">
+        <dex dex="/home/ivan/workspace/checkstar_mobile/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.android.support-support-core-ui-24.2.1_8c09de8d4fab0dd499b27611f81421e980d4ce77/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/home/ivan/workspace/checkstar_mobile/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-auth/9.8.0/jars/classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.0"
+        sha1="ca851be26ff89f5b32cc222cee98139fb3fac830">
+        <dex dex="/home/ivan/workspace/checkstar_mobile/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.google.android.gms-play-services-auth-9.8.0_d09a1c71826ec693d72459a87fcbe3ef12df635d/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/home/ivan/workspace/checkstar_mobile/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-auth-base/9.8.0/jars/classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.0"
+        sha1="a1ed98e01bd58976d80c062fd0ea2968a1ff68a1">
+        <dex dex="/home/ivan/workspace/checkstar_mobile/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.google.android.gms-play-services-auth-base-9.8.0_e4d05763aad05494a6b8452e10f3ccac97cfad12/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/home/ivan/workspace/checkstar_mobile/app/build/intermediates/exploded-aar/com.android.support/support-v4/24.2.1/jars/classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.0"
+        sha1="d7c42c80f6509b9ea4db28ca7859ffae08ec5741">
+        <dex dex="/home/ivan/workspace/checkstar_mobile/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.android.support-support-v4-24.2.1_84bb67b17f7d546a5bc4a9151747cb09656353b9/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/home/ivan/workspace/checkstar_mobile/app/build/intermediates/exploded-aar/com.android.support.constraint/constraint-layout/1.0.0-alpha8/jars/classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.0"
+        sha1="0e753ea8d0a2dea270da7d96a7d6e9d2e9c10f94">
+        <dex dex="/home/ivan/workspace/checkstar_mobile/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.android.support.constraint-constraint-layout-1.0.0-alpha8_9e768cdafc86350493b0b6c6a5f19bb57a5b4119/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/home/ivan/.gradle/caches/modules-2/files-2.1/com.google.code.gson/gson/2.3/5fc52c41ef0239d1093a1eb7c3697036183677ce/gson-2.3.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.0"
+        sha1="5fc52c41ef0239d1093a1eb7c3697036183677ce">
+        <dex dex="/home/ivan/workspace/checkstar_mobile/app/build/intermediates/transforms/dex/debug/folders/1000/10/gson-2.3_64abbdd4dcd631de99ca034c64349f997fef6e69/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/home/ivan/workspace/checkstar_mobile/app/build/intermediates/exploded-aar/com.android.support/support-compat/24.2.1/jars/libs/internal_impl-24.2.1.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.0"
+        sha1="7e4389bd133359a2ff88623ff1e4ff93d6e6f780">
+        <dex dex="/home/ivan/workspace/checkstar_mobile/app/build/intermediates/transforms/dex/debug/folders/1000/10/internal_impl-24.2.1_fe0a8adeb4342dcb2b97a4b50160f90dba945160/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/home/ivan/workspace/checkstar_mobile/app/build/intermediates/exploded-aar/com.android.support/support-core-utils/24.2.1/jars/classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.0"
+        sha1="9c4c3bc902450c39ed54de170db4fb12aea20a35">
+        <dex dex="/home/ivan/workspace/checkstar_mobile/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.android.support-support-core-utils-24.2.1_7de6a44a999e6648fd8cf6e66dce51efff976473/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/home/ivan/workspace/checkstar_mobile/app/build/intermediates/exploded-aar/com.google.firebase/firebase-common/9.8.0/jars/classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.0"
+        sha1="c61641e333fa88da21758bab8cc28ee16604b05f">
+        <dex dex="/home/ivan/workspace/checkstar_mobile/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.google.firebase-firebase-common-9.8.0_e6661794645776756e8927acf6bcee7cb481b0a1/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/home/ivan/workspace/checkstar_mobile/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-iid/9.8.0/jars/classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.0"
+        sha1="85299bf1924dde0200109a58033c5ef84ecb6991">
+        <dex dex="/home/ivan/workspace/checkstar_mobile/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.google.android.gms-play-services-iid-9.8.0_51becb7bb49b76f118ba8718f784bdd88c24adfc/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/home/ivan/workspace/checkstar_mobile/app/build/intermediates/exploded-aar/com.google.firebase/firebase-iid/9.8.0/jars/classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.0"
+        sha1="6b6f292b8b951dcf2ecf2b20853e3eabc7d65c48">
+        <dex dex="/home/ivan/workspace/checkstar_mobile/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.google.firebase-firebase-iid-9.8.0_daaa498f3750e9c9ddb9576dac1c38385c5c4357/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/home/ivan/workspace/checkstar_mobile/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/24.2.1/jars/classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.0"
+        sha1="43b2dba6b5a0b14527961b75329d0b90025f15ea">
+        <dex dex="/home/ivan/workspace/checkstar_mobile/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.android.support-appcompat-v7-24.2.1_1d12856109e9c74d409324bc0f88d218f05c8f3e/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/home/ivan/workspace/checkstar_mobile/app/build/intermediates/exploded-aar/com.android.support/support-media-compat/24.2.1/jars/libs/internal_impl-24.2.1.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.0"
+        sha1="fbf8da429efd5ad21e02e3e5ecaa1efc4167878d">
+        <dex dex="/home/ivan/workspace/checkstar_mobile/app/build/intermediates/transforms/dex/debug/folders/1000/10/internal_impl-24.2.1_80d9ce5d58e0ecf5365ff2ca54f16363694dff8d/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/home/ivan/workspace/checkstar_mobile/app/build/intermediates/exploded-aar/com.google.firebase/firebase-analytics/9.8.0/jars/classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.0"
+        sha1="9ff04cc3470178a44512624036751a803418c2ca">
+        <dex dex="/home/ivan/workspace/checkstar_mobile/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.google.firebase-firebase-analytics-9.8.0_0c5a3600f4ccb6ce990665bd61423c26bbe076e2/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/home/ivan/workspace/checkstar_mobile/app/build/intermediates/exploded-aar/com.android.support/support-core-ui/24.2.1/jars/libs/internal_impl-24.2.1.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.0"
+        sha1="867dad63c33388ff8c7644b236579355036d075f">
+        <dex dex="/home/ivan/workspace/checkstar_mobile/app/build/intermediates/transforms/dex/debug/folders/1000/10/internal_impl-24.2.1_9917fc774c29db2172cb7c63614be5a06ba441d0/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/home/ivan/workspace/checkstar_mobile/app/build/intermediates/exploded-aar/com.android.support/support-fragment/24.2.1/jars/classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.0"
+        sha1="b9a1ac78ad7ef3abedc4a4b30cd92bcacb939d1f">
+        <dex dex="/home/ivan/workspace/checkstar_mobile/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.android.support-support-fragment-24.2.1_9713b101e6fa506fb5feb476929527aebacca9b0/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/home/ivan/.gradle/caches/modules-2/files-2.1/org.jbundle.util.osgi.wrapped/org.jbundle.util.osgi.wrapped.org.apache.http.client/4.1.2/98c86e42679fe7ac066f6c242e0d14f0bce0bb7c/org.jbundle.util.osgi.wrapped.org.apache.http.client-4.1.2.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.0"
+        sha1="98c86e42679fe7ac066f6c242e0d14f0bce0bb7c">
+        <dex dex="/home/ivan/workspace/checkstar_mobile/app/build/intermediates/transforms/dex/debug/folders/1000/10/org.jbundle.util.osgi.wrapped.org.apache.http.client-4.1.2_33e8998bcdd98a2ed120ae5247742839955c7a58/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/home/ivan/workspace/checkstar_mobile/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-basement/9.8.0/jars/classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.0"
+        sha1="9f6d236bac26d02b410e4ee186ba517ace5ee661">
+        <dex dex="/home/ivan/workspace/checkstar_mobile/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.google.android.gms-play-services-basement-9.8.0_ece48dc1b19676d1ac40a3e8e57bf8df6ab8b647/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/home/ivan/Android/Sdk/extras/android/m2repository/com/android/support/support-annotations/24.2.1/support-annotations-24.2.1.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.0"
+        sha1="8de3aafecbdf98a61db6427f008f2d515bcd2544">
+        <dex dex="/home/ivan/workspace/checkstar_mobile/app/build/intermediates/transforms/dex/debug/folders/1000/10/support-annotations-24.2.1_e26d542c93cfbbdb77ee0b542c42bda97c43a252/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/home/ivan/workspace/checkstar_mobile/app/build/intermediates/exploded-aar/com.android.support/support-core-utils/24.2.1/jars/libs/internal_impl-24.2.1.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.0"
+        sha1="935a969265b2a166b2d20415423f5f6e90fe16e0">
+        <dex dex="/home/ivan/workspace/checkstar_mobile/app/build/intermediates/transforms/dex/debug/folders/1000/10/internal_impl-24.2.1_1e3e1754784e0dbda21b109637b7dcf137bb7620/classes.dex" />
     </item>
     <item
         is-multidex="true"
@@ -332,25 +323,34 @@
         optimize="true"
         revision="25.0.0"
         sha1="b1b6ea3b7e4aa4f492509a4952029cd8e48019ad">
-        <dex dex="/home/slushkov/check/receipts2/app/build/intermediates/transforms/dex/debug/folders/1000/10/commons-io-2.4_903097326c585ffbfceccce27d1c923b16154ba6/classes.dex" />
+        <dex dex="/home/ivan/workspace/checkstar_mobile/app/build/intermediates/transforms/dex/debug/folders/1000/10/commons-io-2.4_903097326c585ffbfceccce27d1c923b16154ba6/classes.dex" />
     </item>
     <item
         is-multidex="true"
-        jar="/home/slushkov/.gradle/caches/modules-2/files-2.1/joda-time/joda-time/2.9.7/6eb2e87ddb09e944bb88f06f19ba0638d4607ffd/joda-time-2.9.7.jar"
+        jar="/home/ivan/workspace/checkstar_mobile/app/build/intermediates/exploded-aar/com.android.support/support-fragment/24.2.1/jars/libs/internal_impl-24.2.1.jar"
         jumboMode="true"
         optimize="true"
         revision="25.0.0"
-        sha1="6eb2e87ddb09e944bb88f06f19ba0638d4607ffd">
-        <dex dex="/home/slushkov/check/receipts2/app/build/intermediates/transforms/dex/debug/folders/1000/10/joda-time-2.9.7_66795387ab125349ceb12dbeea8518b48a25e8b9/classes.dex" />
+        sha1="5f64d657e838e8375135c0f6057a7ff8fab6a50e">
+        <dex dex="/home/ivan/workspace/checkstar_mobile/app/build/intermediates/transforms/dex/debug/folders/1000/10/internal_impl-24.2.1_bdb38c5dbcfb991f9dccc8dbafedbdd168f5c4ed/classes.dex" />
     </item>
     <item
         is-multidex="true"
-        jar="/home/slushkov/check/receipts2/app/build/intermediates/exploded-aar/com.android.support/support-media-compat/24.2.1/jars/classes.jar"
+        jar="/home/ivan/workspace/checkstar_mobile/app/build/intermediates/exploded-aar/com.android.support/support-media-compat/24.2.1/jars/classes.jar"
         jumboMode="true"
         optimize="true"
         revision="25.0.0"
         sha1="09b462bbcb77650284bd6614f1a32f360ef369f8">
-        <dex dex="/home/slushkov/check/receipts2/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.android.support-support-media-compat-24.2.1_9f910d3286d4598fbfcb9f63746d5bae3658cd83/classes.dex" />
+        <dex dex="/home/ivan/workspace/checkstar_mobile/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.android.support-support-media-compat-24.2.1_2b85bcef4afe71fefecda372f0ff64cd78564797/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/home/ivan/workspace/checkstar_mobile/app/build/intermediates/exploded-aar/com.koushikdutta.async/androidasync/2.1.9/jars/classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.0"
+        sha1="60d0e28fe7ab6da6c03b54cd8ede502284d51a81">
+        <dex dex="/home/ivan/workspace/checkstar_mobile/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.koushikdutta.async-androidasync-2.1.9_8a85932cbf3e8397dff5208e79d7f446348a8925/classes.dex" />
     </item>
 
 </items>
